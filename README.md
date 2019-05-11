@@ -36,11 +36,14 @@ Open chrome (do not use any other browser!)
 <br>Select File->Open and navigate to to your working directory (where test.html and jqfns.js are) and select test.html
 <br>Click the buttons to run each of the javascript functions (2 for POST and 1 for GET).
 <br>The server will output information in its window when it receives the POSTs and GETs.
-</li><li>
-<br>If you change the jqfns.js file, reload/refresh the test.html window
+</li><li>You can also use curl to test the server:
+  <br>curl --request POST http://localhost:8080/test/SaveName -d 'name=XXX&surName=YYY'
+  <br>curl --request GET http://localhost:8080/test/GetName
+  </li><li>
+If you change the jqfns.js or test.html files, reload/refresh the test.html window
 <br>If you change the java files, re-compile them with javac and stop/start the App again using the steps above.
-<br>If you get classes/symbols not found -- check that you have the classpath set right
-<br>If you add libraries, put the jar files in the working directory and. add them to the end of the CLASSPATH line above after a colon.
+<br>If you get classes/symbols not found -- check that you have the classpath set correctly (see above)
+<br>If you add libraries, put the jar files in the working directory and add them to the end of the CLASSPATH line above after a colon.
 </li></ol>
 
 Files
