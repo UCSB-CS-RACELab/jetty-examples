@@ -1,5 +1,5 @@
 # jetty-examples
-Steps
+Steps - we are creating both the server (java) and the client (javascript) in the same directory.  You can run them on the same host (use localhost as the URL).
 <ol><li>
 Download/save off the Jetty server 
 <br>from here: http://repo1.maven.org/maven2/org/eclipse/jetty/aggregate/jetty-all/
@@ -26,6 +26,10 @@ Run the server (in its own window).
 <br>export CLASSPATH=.:./gson.jar:./jetty-all.jar:./json-simple.jar
 <br>java App
 <br>//leave it running, but when you are ready, use ctrl-c to kill/stop it
+</li><li>
+7) On the javascript/html side (using jquery) -- still in your local working directory
+<br>Download jquery production copy from http://jquery.com/download/
+<br>cp ~/Desktop/jquery-3.4.1.min.js .
 </li><li>
 Open chrome (do not use any other browser!)
 <br>Turn on debugging window: View->Developer->JavaScript Console
