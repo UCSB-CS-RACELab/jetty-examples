@@ -37,7 +37,7 @@ Open chrome (do not use any other browser!)
 <br>If you change the java files, re-compile them with javac and stop/start the App again using the steps above.
 <br>If you get classes/symbols not found -- check that you have the classpath set right
 <br>If you add libraries, put the jar files in the working directory and. add them to the end of the CLASSPATH line above after a colon.
-</li><ol>
+</li></ol>
 
 Files
 <ul><li>App.java - the java program (with main in it) that starts the simple Java HTTP server (jetty)
