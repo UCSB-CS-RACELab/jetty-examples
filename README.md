@@ -32,6 +32,8 @@ Run the server (in its own window).
 <br>cp ~/Desktop/jquery-3.4.1.min.js .
 </li><li>
 Open chrome (do not use any other browser!)
+  <br>Download/install CORS extension (allows localhost testing)
+https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US
 <br>Turn on debugging window: View->Developer->JavaScript Console
 <br>Select File->Open and navigate to to your working directory (where test.html and jqfns.js are) and select test.html
 <br>Click the buttons to run each of the javascript functions (2 for POST and 1 for GET).
