@@ -178,6 +178,17 @@ POST (incoming key/value String pairs):
 name:XXX surname:YYY
 ```
 
+</li><li>Try a client in a different language: Python
+<br>With the server running, go to another console window on the same machine and run the python client:
+
+```
+cd python_client
+pip install requests //if you haven't done this already
+python client.py
+```
+
+This runs a GET and a POST.  Edit the file to change the url set in main for each if you want to run this over a network, ie change localhost:8080 to csil-24.cs.ucsb.edu:8080, to work with the setup above.
+
 </li><li>Assuming the above worked.  You can now try implementing your client with React or some other framework and have it post/get to your server.  To to this, change the URL/IP that react uses (developement server) to be the URL/IP of your server (csil-24.cs.ucsb.edu:8080 in the steps above.  Change 8080 to the port you set if you changed the port).
 
 <br>There is a SaveArray example/button that posts an array of json data in jqfns.js for you to check out if needed.
