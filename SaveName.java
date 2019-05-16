@@ -17,7 +17,7 @@ public class SaveName extends HttpServlet {
             System.out.println("POST (incoming key/value String pairs): ");
             final String name = request.getParameter("name");
             final String surName = request.getParameter("surName");
-            System.out.println("name:"+name+" surname:"+surName);
+            System.out.println("name:"+name+" surName:"+surName);
             response.setStatus(HttpServletResponse.SC_OK);
  
         } catch (Exception ex) {
