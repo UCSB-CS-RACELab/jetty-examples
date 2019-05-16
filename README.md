@@ -15,7 +15,11 @@ Download/save off the Jetty server
 http://repo1.maven.org/maven2/org/eclipse/jetty/aggregate/jetty-all/9.4.18.v20190429/
 <br>click on and download the jetty-all uber jar file: jetty-all-9.4.18.v20190429-uber.jar
 <br>Save it in the local working directory as jetty.jar, e.g.:
-<br>mv ~/Desktop/jetty-all-9.4.18.v20190429-uber.jar jetty.jar  //change downloaded filename if needed
+
+```
+mv ~/Desktop/jetty-all-9.4.18.v20190429-uber.jar jetty.jar  //change downloaded filename if needed
+```
+
 </li><li>
 Download simple-json v1.1.1 (json-simple-1.1.1.jar) from here: https://code.google.com/archive/p/json-simple/downloads
 <br>Save it in the local working directory and rename it to be called json-simple.jar
