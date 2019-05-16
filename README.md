@@ -60,10 +60,12 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 <br>Click the buttons to run each of the javascript functions (2 for POST and 1 for GET).
 <br>The server will output information in its window when it receives the POSTs and GETs.
 </li><li>You can also use curl to test the server -- note the capitalization in surName (must be exactly this):
-  ```
-  curl --request POST http://localhost:8080/test/SaveName -d 'name=XXX&surName=YYY'
-  curl --request GET http://localhost:8080/test/GetName
-  ```
+
+```
+curl --request POST http://localhost:8080/test/SaveName -d 'name=XXX&surName=YYY'
+curl --request GET http://localhost:8080/test/GetName
+```
+  
   </li><li>
 If you change the jqfns.js or test.html files, reload/refresh the test.html window
 <br>If you change the java files, re-compile them with javac and stop/start the App again using the steps above.
