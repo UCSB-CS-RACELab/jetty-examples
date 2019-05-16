@@ -111,7 +111,7 @@ cd jetty-examples
 export CLASSPATH=.:./gson.jar:./jetty-all.jar:./json-simple.jarjavac *.java
 java App
 
-//you should see some lines and these as the last 2 lines:
+//you should see some lines and these as the last 2 lines (the last value 358ms is time, so that may change):
 2019-05-16 08:06:33.922:INFO:oejs.AbstractConnector:main: Started ServerConnector@4f8e5cde{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 2019-05-16 08:06:33.923:INFO:oejs.Server:main: Started @358ms
 
