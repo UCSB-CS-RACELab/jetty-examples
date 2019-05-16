@@ -1,6 +1,10 @@
 # jetty-examples
 Steps - we are creating both the server (java) and the client (javascript) in the same directory.  You can run them on the same host (use localhost as the URL).
 <ol><li>
+  Clone this repo and move into the jetty-examples working directory.
+  <br>git clone https://github.com/UCSB-CS-RACELab/jetty-examples.git
+  <br>cd jetty-examples
+</li><li>
 Download/save off the Jetty server 
 <br>from here: http://repo1.maven.org/maven2/org/eclipse/jetty/aggregate/jetty-all/
 //choose the most recent version 9.4.18 for example:
