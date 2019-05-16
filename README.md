@@ -105,6 +105,9 @@ wget https://search.maven.org/remotecontent?filepath=com/google/code/gson/gson/2
 </li><li>Build the repo and run the server
 
 ```
+cd
+cd cs48
+cd jetty-examples
 export CLASSPATH=.:./gson.jar:./jetty-all.jar:./json-simple.jarjavac *.java
 java App
 
