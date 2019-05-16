@@ -56,7 +56,7 @@ java App
 
 Leave it running, but when you are ready to turn it off, use ctrl-c to kill/stop it
 </li><li>
-7) On the javascript/html side (using jquery) -- still in your local working directory
+On the javascript/html side (using jquery) -- still in your local working directory
 <br>Download jquery production copy from http://jquery.com/download/
 
 ```
@@ -156,7 +156,9 @@ cd python_client
 pip install requests //if you haven't done this already
 python client.py
 ```
-<br>You should see this on the server console/window:
+
+You should see this on the server console/window:
+
 ```
 GET request, ID: foo
 POST (incoming key/value String pairs): 
