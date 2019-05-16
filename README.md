@@ -76,6 +76,26 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 curl --request POST http://localhost:8080/test/SaveName -d 'name=XXX&surName=YYY'
 curl --request GET http://localhost:8080/test/GetName
 ```
+
+You can also try using Python for the client.  There is a simple python client in the python_client directory.
+<br>With the server running, go to another console window on the same machine and run the python client:
+
+```
+cd python_client
+pip install requests //if you haven't done this already
+python client.py
+```
+
+You should see this on the server console/window:
+
+```
+GET request, ID: foo
+POST (incoming key/value String pairs): 
+name:name1 surname:name2
+```
+
+Check out client.py to see how to issue GETs and POSTs from python.
+
   
   </li><li>
 If you change the jqfns.js or test.html files, reload/refresh the test.html window
@@ -148,24 +168,6 @@ curl --request GET http://csil-24.cs.ucsb.edu:8080/test/GetName
 //you should see this on the server console/window:
 GET request, ID: NONE
 ```
-</li><li>Next you can test that a different client works.  There is a simple python client in the python_client directory.
-<br>With the server running, go to another console window on the same machine and run the python client:
-
-```
-cd python_client
-pip install requests //if you haven't done this already
-python client.py
-```
-
-You should see this on the server console/window:
-
-```
-GET request, ID: foo
-POST (incoming key/value String pairs): 
-name:name1 surname:name2
-```
-
-Check out client.py to see how to issue GETs and POSTs from python.
 
 </li><li>Next you can test that a different client works.  There is a sample javascript client in this repo.  Here are the steps to test it.  Make sure that your server is running and note the name of the server and the port (e.g. csil-24.cs.ucsb.edu:8080, change the port to the one you set in App.java if you changed it).
 
@@ -197,7 +199,7 @@ name:XXX surname:YYY
 ```
 
 </li><li>Try a client in a different language: Python
-<br>With the server running, go to another console window on the same machine and run the python client:
+<br>With the server running, go to another console window on the same machine and run the python client. Edit client.py and change localhost:8080 in two places to the name of the server (e.g. csil-24.cs.ucsb.edu:8080).
 
 ```
 cd python_client
@@ -205,7 +207,16 @@ pip install requests //if you haven't done this already
 python client.py
 ```
 
-This runs a GET and a POST.  Edit the file to change the url set in main for each if you want to run this over a network, ie change localhost:8080 to csil-24.cs.ucsb.edu:8080, to work with the setup above.
+You should see this on the server console/window:
+
+```
+GET request, ID: foo
+POST (incoming key/value String pairs): 
+name:name1 surname:name2
+```
+
+Check out client.py to see how to issue GETs and POSTs from python.
+
 
 </li><li>Assuming the above worked.  You can now try implementing your client with React or some other framework and have it post/get to your server.  To to this, change the URL/IP that react uses (developement server) to be the URL/IP of your server (csil-24.cs.ucsb.edu:8080 in the steps above.  Change 8080 to the port you set if you changed the port).
 
