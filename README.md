@@ -40,6 +40,7 @@ mv ~/Desktop/gson-2.8.5.jar ./gson.jar     //change the downloaded filename if n
 
 </li><li>
 Build the java files in this directory (open a console and move into the working directory jetty-examples).
+
 ```
 export CLASSPATH=.:./gson.jar:./jetty-all.jar:./json-simple.jar
 javac *.java
