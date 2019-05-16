@@ -23,6 +23,11 @@ mv ~/Desktop/jetty-all-9.4.18.v20190429-uber.jar jetty.jar  //change downloaded 
 </li><li>
 Download simple-json v1.1.1 (json-simple-1.1.1.jar) from here: https://code.google.com/archive/p/json-simple/downloads
 <br>Save it in the local working directory and rename it to be called json-simple.jar
+
+```
+mv ~/Desktop/json-simple-1.1.1.jar ./json-simple.jar     //change the downloaded filename if needed
+```
+  
 </li><li>
 Download GSON+JSON (java deserialization to JSON objects):
 <br>https://search.maven.org/artifact/com.google.code.gson/gson/2.8.5/jar
@@ -52,6 +57,7 @@ Leave it running, but when you are ready to turn it off, use ctrl-c to kill/stop
 </li><li>
 7) On the javascript/html side (using jquery) -- still in your local working directory
 <br>Download jquery production copy from http://jquery.com/download/
+
 ```
   cp ~/Desktop/jquery-3.4.1.min.js .
 ```
