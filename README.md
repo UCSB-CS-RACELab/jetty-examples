@@ -148,8 +148,24 @@ curl --request GET http://csil-24.cs.ucsb.edu:8080/test/GetName
 //you should see this on the server console/window:
 GET request, ID: NONE
 ```
+</li><li>Next you can test that a different client works.  There is a simple python client in the python_client directory.
+<br>With the server running, go to another console window on the same machine and run the python client:
 
-</li><li>Next you can test that a different client works.  Ther is a sample javascript client in this repo.  Here are the steps to test it.  Make sure that your server is running and note the name of the server and the port (e.g. csil-24.cs.ucsb.edu:8080, change the port to the one you set in App.java if you changed it).
+```
+cd python_client
+pip install requests //if you haven't done this already
+python client.py
+```
+<br>You should see this on the server console/window:
+```
+GET request, ID: foo
+POST (incoming key/value String pairs): 
+name:name1 surname:name2
+```
+
+Check out client.py to see how to issue GETs and POSTs from python.
+
+</li><li>Next you can test that a different client works.  There is a sample javascript client in this repo.  Here are the steps to test it.  Make sure that your server is running and note the name of the server and the port (e.g. csil-24.cs.ucsb.edu:8080, change the port to the one you set in App.java if you changed it).
 
 <br>On your laptop (make sure you are connected to the Internet), clone the repo and cd into the jetty-examples directory. Edit the jqfns.js file and change localhost:8080 everywhere (3 places) to your server and port: csil-24.cs.ucsb.edu:8080
 
