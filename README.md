@@ -9,8 +9,8 @@ http://repo1.maven.org/maven2/org/eclipse/jetty/aggregate/jetty-all/9.4.18.v2019
 <br>Save it in the local working directory as jetty.jar, e.g.:
 <br>mv ~/Desktop/jetty-all-9.4.18.v20190429-uber.jar jetty.jar  //change downloaded filename if needed
 </li><li>
-Download simple-json from here: https://code.google.com/archive/p/json-simple/downloads
-<br>Save it in the local working directory as json-simple.jar
+Download simple-json v1.1.1 (json-simple-1.1.1.jar) from here: https://code.google.com/archive/p/json-simple/downloads
+<br>Save it in the local working directory and rename it to be called json-simple.jar
 </li><li>
 Download GSON+JSON (java deserialization to JSON objects):
 <br>https://search.maven.org/artifact/com.google.code.gson/gson/2.8.5/jar
