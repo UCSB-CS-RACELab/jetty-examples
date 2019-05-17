@@ -70,6 +70,13 @@ https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeac
 <br>Select File->Open and navigate to to your working directory (where test.html and jqfns.js are) and select test.html
 <br>Click the buttons to run each of the javascript functions (2 for POST and 1 for GET).
 <br>The server will output information in its window when it receives the POSTs and GETs.
+
+<br>If you change the jqfns.js or test.html files, reload/refresh the test.html window
+<br>If you change the java files, re-compile them with javac and stop/start the App again using the steps above.
+<br>If you get classes/symbols not found -- check that you have the classpath set correctly (see above)
+<br>If you add libraries, put the jar files in the working directory and add them to the end of the CLASSPATH line above after a colon.
+
+
 </li><li>You can also use curl to test the server -- note the capitalization in surName (must be exactly this):
 
 ```
@@ -97,11 +104,6 @@ name:name1 surname:name2
 Check out client.py to see how to issue GETs and POSTs from python.
 
   
-  </li><li>
-If you change the jqfns.js or test.html files, reload/refresh the test.html window
-<br>If you change the java files, re-compile them with javac and stop/start the App again using the steps above.
-<br>If you get classes/symbols not found -- check that you have the classpath set correctly (see above)
-<br>If you add libraries, put the jar files in the working directory and add them to the end of the CLASSPATH line above after a colon.
 </li></ol>
 
 ## Making the above work on two different machines (server and client)
