@@ -84,7 +84,7 @@ curl --request POST http://localhost:8080/test/SaveName -d 'name=XXX&surName=YYY
 curl --request GET http://localhost:8080/test/GetName
 ```
 
-You can also try using Python for the client.  There is a simple python client in the python_client directory.
+</li><li>You can also try using Python for the client.  There is a simple python client in the python_client directory.
 <br>With the server running, go to another console window on the same machine and run the python client:
 
 ```
